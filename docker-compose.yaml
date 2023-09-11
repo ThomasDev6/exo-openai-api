@@ -8,5 +8,8 @@ services:
     stdin_open: true
     working_dir: /home/node
     env_file: .env
+    command: "npm run start"
+    ports:
+      - 3000:3000
     volumes:
       - ./:/home/node
